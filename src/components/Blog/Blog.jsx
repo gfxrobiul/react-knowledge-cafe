@@ -18,7 +18,7 @@ const Blog = ({ blog , hanleAddToBookmark }) => {
                 </div>
                 <div className="items-center">
                     <span>{reading_time} min read</span>
-                    <button onClick={hanleAddToBookmark} className="ml-2 text-2xl text-red-600"><FaBookmark></FaBookmark></button>
+                    <button onClick={() => hanleAddToBookmark(blog)} className="ml-2 text-2xl text-red-600"><FaBookmark></FaBookmark></button>
                 </div>
             </div>
             <h2 className="text-4xl">{title}</h2>
